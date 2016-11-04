@@ -49,7 +49,7 @@ Each row in the SVM file describes a single entity referring to a specific docum
 The document is identified by the ID described in the second column, while the comment of the row (i.e., everything which follows the # character at the end of each row) include some additional information regarding the specific entity. 
 For instance, the first row is the following:
 
--1.0 qid:1 1:0.60355 ....  138:3.510496 #     [powell]        9350062 Arthur_William_Baden_Powell
+	-1.0 qid:1 1:0.60355 ....  138:3.510496 #     [powell]        9350062 Arthur_William_Baden_Powell
 
 This row identify the entity with ID = 9350062 and Wikipedia-title = Arthur_William_Baden_Powell related to the spot `powell` in the document with ID = 1. Its saliency score is -1, which means it is an entity not relevant for the document (these non-relevant entities have been produced by a spotting process executed on the same spots of the linked entities, in order to produce negative example useful for training our models).
 
